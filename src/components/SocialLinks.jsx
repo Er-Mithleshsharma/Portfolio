@@ -2,7 +2,7 @@ import React from 'react'
 import {FaGithub,FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonBadgeFill} from 'react-icons/bs'
-import pdf from "../assets/ml file.pdf"
+import pdf from "../assets/Mithlesh_resume.pdf"
 const SocialLinks = () => {
     const links =[
         {

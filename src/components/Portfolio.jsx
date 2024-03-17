@@ -2,6 +2,8 @@ import React from 'react'
 import reactWeather from '../assets/portfolio/reactWeather.jpg'
 import socketsphere from '../assets/portfolio/socketsphere.png'
 import portfolio from "../assets/portfolio/portfolio.png"
+import reactOmeal from '../assets/portfolio/reactomeal.png'
+import movieMentor from '../assets/portfolio/movie-mentor.png'
 
 const Portfolio = () => {
 // Can add a link to each part of the array to go to onclick
@@ -15,13 +17,23 @@ const Portfolio = () => {
     {
         id: 2,
         src: portfolio,
-        link:"https://github.com/Er-Mithleshsharma/Portfoilo",
+        link:"https://mithleshsharma.netlify.app/",
         code:"https://github.com/Er-Mithleshsharma/Portfoilo"
 
     },
     {
         id: 3,
-        src: reactWeather
+        src: reactOmeal,
+        link:"https://reactomealv2.netlify.app",
+        code:"https://github.com/Er-Mithleshsharma/ReactOmeal"
+
+    },
+    {
+        id: 4,
+        src: movieMentor,
+        link:"https://movie-mentor.netlify.app",
+        code:"https://github.com/Er-Mithleshsharma/Movie-Mentor"
+
     },
   ]  
 
