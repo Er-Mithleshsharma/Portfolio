@@ -4,11 +4,11 @@ import heroimg  from '../assets/heroimg.jpg'
 import {Link} from "react-scroll"
 const Home = () => {
   return (
-    <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800
-
+    <div name="home"  className='w-full bg-gradient-to-b from-black via-black to-gray-800 h-auto md:h-screen
+    px-2
      '>
            <div className="max-w-screen-lg mx-auto flex flex-col 
-           items-center  h-full px-4 md:flex-row">
+           items-center  h-full px-0 md:flex-row">
             <div className='flex flex-col justify-center h-auto'>
                 <h2 className='text-4xl sm:text-7xl font-bold text-white pt-5 md:pt-32 lg:pt-5'>I'm a Full Stack Developer</h2>
                 <p className='text-gray-500 py-4'>
@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
               </Link>
             </div>
-            <div className='pt-10 md:pt:0'>
+            <div className='p-10 md:pt:0'>
                     <img src={heroimg} alt="" className='rounded-2xl mx-auto w-2/3 md:w-9/12 '/>
                 </div>
            </div>
