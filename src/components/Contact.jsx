@@ -10,7 +10,7 @@ export const Contact = () => {
             </div>
             <div  name='contact' className='flex items-center justify-center'>
                 <form 
-                action="https://getform.io/f/fd1f0e88-2515-4add-8dd5-2c5406dadd79" 
+                action="https://getform.io/f/zazkykob" 
                 method='POST'
                 className='flex flex-col w-full md:w-1/2'>
                     <input 
