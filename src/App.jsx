@@ -5,9 +5,11 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 import { Contact } from "./components/Contact";
+import CustomCursor from "./components/CustomCursor";
 function App() {
   return (
     <div>
+      <CustomCursor></CustomCursor>
       <NavBar></NavBar>
       <Home></Home>
       <SocialLinks/>
