@@ -19,7 +19,7 @@ also possess a strong understanding of Data Structures and Algorithms
  understanding the core concepts to build robust and efficient software
   solutions.</p>
         <br />
-        <p className='text-xl mt-10'>
+        <p className='text-xl mt-10 '>
         Outside of my academic pursuits, I enjoy diving into coding challenges,
  exploring new technologies, and contributing to open-source projects.
   I thrive in dynamic environments where I can apply my skills and continue 
