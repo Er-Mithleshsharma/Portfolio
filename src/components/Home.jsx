@@ -4,7 +4,7 @@ import heroimg  from '../assets/heroimg.jpg'
 import {Link} from "react-scroll"
 const Home = () => {
   return (
-    <div name="home"  className='w-full bg-gradient-to-b from-black via-black to-gray-800 h-auto md:h-screen
+    <div name="home"  className='w-full bg-gradient-to-b from-black via-black to-gray-900 h-auto md:h-screen
     px-2
      '>
            <div className="max-w-screen-lg mx-auto flex flex-col 

@@ -21,21 +21,25 @@ const CustomCursor = () => {
       cursor.classList.remove("hovered");
     };
 
-    document.addEventListener("mousemove", onMouseMove);
+    const isSmallDevice = window.innerWidth <= 768;
 
-    const elementsToHover = document.querySelectorAll("a, img, p, h1, h2, h3, h4, h5, h6, span");
-    elementsToHover.forEach((element) => {
-      element.addEventListener("mouseenter", onMouseHover);
-      element.addEventListener("mouseleave", onMouseLeave);
-    });
+    if (!isSmallDevice) {
+      document.addEventListener("mousemove", onMouseMove);
 
-    return () => {
-      document.removeEventListener("mousemove", onMouseMove);
+      const elementsToHover = document.querySelectorAll("a, img, p, h1, h2, h3, h4, h5, h6, span, li, ul");
       elementsToHover.forEach((element) => {
-        element.removeEventListener("mouseenter", onMouseHover);
-        element.removeEventListener("mouseleave", onMouseLeave);
+        element.addEventListener("mouseenter", onMouseHover);
+        element.addEventListener("mouseleave", onMouseLeave);
       });
-    };
+
+      return () => {
+        document.removeEventListener("mousemove", onMouseMove);
+        elementsToHover.forEach((element) => {
+          element.removeEventListener("mouseenter", onMouseHover);
+          element.removeEventListener("mouseleave", onMouseLeave);
+        });
+      };
+    }
   }, []);
 
   return <div ref={cursorRef} className="custom-cursor"></div>;

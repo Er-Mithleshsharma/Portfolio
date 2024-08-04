@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 import { Contact } from "./components/Contact";
 import CustomCursor from "./components/CustomCursor";
+import Company from "./components/Company";
 function App() {
   return (
     <div>
@@ -15,7 +16,9 @@ function App() {
       <SocialLinks/>
       <About/>
       <Portfolio/>
+      <Company/>
       <Experience/>
+      
       <Contact/>
     </div>
   );
